@@ -91,7 +91,7 @@ class external extends external_api {
                 'commnews' => new external_value(PARAM_RAW, ''),
                 'commnewsemail' => new external_value(PARAM_RAW, ''),
                 'language' => new external_value(PARAM_RAW, ''),
-                'policyagreed' => new external_value(PARAM_RAW, ''),
+                'policyagreed' => new external_value(PARAM_RAW, '', VALUE_OPTIONAL),
                 'mobileservicesenabled' => new external_value(PARAM_RAW, ''),
                 'mobilenotificationsenabled' => new external_value(PARAM_RAW, ''),
                 'registereduserdevices' => new external_value(PARAM_RAW, ''),
