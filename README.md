@@ -5,7 +5,7 @@
 2. Create new web services user @ user/editadvanced.php?id=-1  
 Eg. siteinfoconsumer  
 
-3. Create new role @ roles/define.php
+3. Create new role @ admin/roles/define.php?action=add
 Eg.  
 shortname = instanceinfoconsumer  
 fullname = Instance Information Consumer  
@@ -13,9 +13,11 @@ archetype = auth user
 assignable context = system  
 capabilities = Allow -> webservice/rest:use  
 
-4. Assign new role to previous consumer user @ roles/assign.php?contextid=1  
+4. Assign new role to previous consumer user @ admin/roles/assign.php?contextid=1  
 
-5. If the built-in service is properly declared, now add user to the authorized users for the services @ admin/settings.php?section=externalservices > Built-in Services > the service row - Users column - Authorised users  
+5. If the built-in service is properly declared, now add user to the authorized users for the
+services @ admin/settings.php?section=externalservices > Built-in Services > the service row
+- Users column - Authorised users  
 
 6. Create a token for the service (optionally user-service) @ admin/webservice/tokens.php?sesskey=pb4TWOvw2K&action=create  
 Eg. 24a21bfd4211dcbac87df901215e2c1f  
