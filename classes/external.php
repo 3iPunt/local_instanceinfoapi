@@ -49,36 +49,6 @@ class external extends external_api {
      *
      * @return external_function_parameters
      */
-    public static function plugin_installed_parameters() {
-        return new external_function_parameters([
-            // none
-        ]);
-    }
-
-    /**
-     * @return array site info
-     */
-    public static function plugin_installed() {
-        return ['installed' => true];
-    }
-
-    /**
-     * Returns description of method result value
-     *
-     * @return external_single_structure
-     * @since Moodle 2.2
-     */
-    public static function plugin_installed_returns() {
-        return new external_single_structure([
-            'installed' => new external_value(PARAM_BOOL, ''),
-        ]);
-    }
-
-    /**
-     * Returns description of method parameters
-     *
-     * @return external_function_parameters
-     */
     public static function get_site_info_parameters() {
         return new external_function_parameters([
             // none
